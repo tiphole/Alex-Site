@@ -612,7 +612,6 @@ transform-box: fill-box;
   width: auto;
   border-radius: 10px;
   transition: 0.5s ease-in-out;
-  
 }
 
 .tech1:hover img {
@@ -629,7 +628,7 @@ transform: scale(1.1);
 
 .tech2 img  {
   height: 100%;
-  width: auto;
+  width: 100%;
   border-radius: 10px;
   transition: transform 0.5s ease-in-out;
 }
@@ -646,7 +645,7 @@ transform: scale(1.1);
 }
 
 .tech3 img  {
-  height: auto;
+  height: 100%;
   width: 100%;
   border-radius: 10px;
   transition: 0.5s ease-in-out;
@@ -659,10 +658,21 @@ transform: scale(1.1);
 
 .tech4 {
   grid-area: tech4;
-  
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+.tech4 img{
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.tech4:hover img{
+  transform: scale(1.2);
 }
 
 .overlay {
@@ -975,7 +985,7 @@ display: none;
 
 .mission-text {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-inline: auto;
   text-align: center;
   width: 100%;
@@ -1693,8 +1703,20 @@ input {
     max-width: 50%;
   }
   
+  .firstTrip p {
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    padding: 0 5rem;
+  }
+
  .secondTrip img {
   max-width: 50%;
+ }
+
+ .secondTrip p {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  padding: 0 5rem;
  }
 
   .thirdTrip img {
@@ -1702,23 +1724,44 @@ input {
    }
   
   .thirdTrip p {
-    line-height: 2.5rem;
+    line-height: 1.8rem;
     font-size: 1.5rem;
+    padding: 0 5rem;
   }
   
   .fourthTrip img {
     max-width: 50%;
    }
+   
+  .fourthTrip p {
+   line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0 9rem;
+  }
   
   .fifthTrip img {
     max-width: 50%;
     height: auto;
   }
   
+  .fifthTrip p {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0 9rem;
+  }
+  
+
   .sixthTrip img {
     max-width: 50%;
     height: auto;
   }
+
+  .sixthTrip p {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0 8rem;
+  }
+  
 
   .groundTrip {
     max-width: 100%;
@@ -1746,6 +1789,7 @@ input {
   .firstTrip p {
     line-height: 2rem;
     font-size: 1rem;
+    padding: 5rem 0;
   }
   
   .secondTrip {
@@ -1761,7 +1805,7 @@ input {
     order: 2;
     line-height: 2rem;
     font-size: 1rem;
- 
+    padding: 5rem 0;
   }
   
   .thirdTrip {
@@ -1779,6 +1823,7 @@ input {
   .thirdTrip p {
     line-height: 2rem;
     font-size: 1rem;
+    padding: 5rem 0;
   }
   
   .fourthTrip {
@@ -1796,6 +1841,7 @@ input {
     order: 2;
     line-height: 2rem;
     font-size: 1rem;
+    padding: 5rem 0;
   }
   
   .fifthTrip {
@@ -1811,6 +1857,7 @@ input {
   .fifthTrip p {
     line-height: 2rem;
     font-size: 1rem;
+    padding: 5rem 0;
   }
   
   .sixthTrip {
@@ -2073,7 +2120,6 @@ input {
 
 /* ----START_OF_EXPLORE_PLUS */
 
-
 .explorePlus-quote{
   color: #fff;
   font-size: 2.5rem;
@@ -2140,16 +2186,86 @@ input {
 .prev {
   left: 0;
 }
+
 .next {
   right: 0;
-
 }
 
 .prev:hover, .next:hover {
   text-shadow: 1px 1px 4px rgb(255, 255, 255);
-  
 }
 
+@media screen and (max-width:64em){
+  .explorePlus-quote{
+    margin-top: 25rem;
+  }
+  .carousel{
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30rem;
+    max-width: 100%;
+  }
+  
+  .challenge {
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 2.5rem;
+    background-color: #000000;
+    max-width: 100%;
+    text-align: center;
+    
+  }
+  
+  .slideshow {
+    position: relative;
+    border: solid 1px;
+   max-width: 100%;
+  }
+
+  .slideshow img {
+    width: 100%;
+  }
+  
+  .photos {
+    display: none;
+  }
+  
+  .prev , .next {
+    position: absolute;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    padding: 0 16px 16px ; 
+    top: 50%;
+    font-size: 25px;
+    margin-top: -22px;
+    font-weight: bold;
+    display: block;
+    transition: 0.7s ease;
+  }
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width:27em){
+  .challenge p{
+    font-size: 2rem;
+  }
+}
 
 /* THUMBNAILS */
 
