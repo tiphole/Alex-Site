@@ -1,6 +1,9 @@
 function showSlides(carouselId) {
   let carousel = document.getElementById(carouselId);
-  let slides = carousel.getElementsByClassName("photos");
+
+   let slides = carousel.getElementsByClassName("photos");
+
+   
   let dots = carousel.getElementsByClassName("dots");
   let indicator = carousel.getAttribute("data-indicator") || 0; 
 
@@ -18,6 +21,13 @@ function showSlides(carouselId) {
   slides[indicator - 1].style.display = "block";
   dots[indicator - 1].classList.add('active');
 }
+showSlides('carousel');
+showSlides('carousel2');
+showSlides('carousel3');
+showSlides('carousel4');
+
+
+
 
 function prevSlide(carouselId) {
   let carousel = document.getElementById(carouselId);
