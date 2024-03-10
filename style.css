@@ -17,16 +17,12 @@ html {
 body {
   background-color: #000000;
   overflow-x: hidden;
-
 }
 
-
 /* ------START_OF_HEADER-------- */
-
 header {
   width: 100%;
   height: 200px;
- 
 }
 
 .nav-toggle {
@@ -74,7 +70,7 @@ header {
   background: url(/logos/logoipsum-294.svg) no-repeat center center/cover;
 }
 
-/* header-responsive */
+/* ---START_OF_RESPONSIVE_HEADER-- */
   @media screen and (max-width:64em) {
     .navigationBar ul {
       flex-direction: column;
@@ -174,11 +170,9 @@ header {
       opacity: 1;
       transition: opacity 250ms ease-in-out 250ms;
     }
-
   }
 
   @media (max-width:27em) {
-
     .navigationBar ul {
       flex-direction: column;
     }
@@ -187,14 +181,10 @@ header {
       justify-content: center;
     }
   }
-
-
-
+/* ---END_OF_RESPONSIVE_HEADER-- */
 /* ------END OF HEADER----- */
 
 /* --------FOOTER------- */
-
-
 .footer {
   margin: 10rem 0 5rem 0;
   height: auto;
@@ -246,7 +236,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .contactInfo h4 {
@@ -257,7 +246,6 @@ header {
   text-decoration: none;
   color: #fff;
 }
-
 
 .footerUnderbar {
   padding-top: 7rem;
@@ -299,9 +287,8 @@ transform-origin: center;
 transform-box: fill-box;
 }
 
- /* footer-responsive */
-
-  @media screen and (max-width:64rem) {
+ /* -----START_OF_RESPONSIVE_FOOTER------ */
+ @media screen and (max-width:64rem) {
     .footer {
       margin: 10rem 0 5rem 0;
       height: auto;
@@ -309,7 +296,6 @@ transform-box: fill-box;
       display: flex;
       flex-direction: column;
       align-items: center;
-
     }
 
     .footerbar {
@@ -322,9 +308,7 @@ transform-box: fill-box;
     .footer-logo {
       width: 20%;
       text-align: center;
-
     }
-
   }
 
   @media screen and (max-width:27rem) {
@@ -341,13 +325,11 @@ transform-box: fill-box;
       display: flex;
       justify-content: space-evenly;
       width: 100%;
-
     }
 
     .footer-logo {
       width: 20%;
       text-align: center;
-
     }
 
     .footer-logo img {
@@ -376,12 +358,10 @@ transform-box: fill-box;
       display: none;
     }
   }
-
+/* ---END_OF_RESPONSIVE_FOOTER--- */
 /* ------END-OF-FOOTER---- */
 
 /* ----------START OF MAIN BODY ABOUT US-------- */
-
-
 .menu_Underbar {
   max-width: 100%;
   min-height: 20rem;
@@ -406,7 +386,6 @@ transform-box: fill-box;
     border-radius: 50%;
     right: 0;
     height: 15rem;
-
   }
 
   15% {
@@ -443,7 +422,6 @@ transform-box: fill-box;
     border-radius: 50%;
     right: 75%;
     height: 15rem;
-
   }
 
   65% {
@@ -478,9 +456,7 @@ transform-box: fill-box;
     border-radius: 50%;
     right: 0;
     height: 15rem;
-
   }
-
 }
 
 .upperBody_aboutUs {
@@ -583,7 +559,7 @@ transform-box: fill-box;
 }
 
 .first-contact {
-  background: url(firstcontact.jpg);
+  background: url(/metro/background_About.jpg);
   background-size: cover;
   height: 100%;
   max-width: auto;
@@ -619,7 +595,7 @@ transform-box: fill-box;
 }
 
 .tech1:hover img {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .tech2 {
@@ -627,7 +603,6 @@ transform: scale(1.1);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  
 }
 
 .tech2 img  {
@@ -658,7 +633,6 @@ transform: scale(1.1);
 .tech3:hover img {
 transform: scale(1.1);
 }
-
 
 .tech4 {
   grid-area: tech4;
@@ -710,7 +684,6 @@ font-size: 1.8rem;
 color: #ffffff;
 }
 
-
 .tech1:hover .overlay{
   opacity: 1;
 }
@@ -724,14 +697,11 @@ color: #ffffff;
   opacity: 1;
 }
 
-
-
 .context {
   margin-top: 20rem;
   display: flex;
   max-width: 100%;
   background-color: transparent;
-
 }
 
 .awards {
@@ -740,23 +710,17 @@ color: #ffffff;
   flex-direction: column;
   align-items: start;
   justify-content: space-around;
-
-
 }
 
 .awards h2 {
   color: #fff;
   font-size: 5rem;
-
-
 }
 
 .awardImg {
   display: flex;
   width: 40%;
   height: 15%;
-
-
 }
 
 .metro-style {
@@ -769,7 +733,6 @@ color: #ffffff;
     'image1 image1 image1 image5'
     'image3 image3 image4 image5'
   ;
-
 }
 
 .metro-1 {
@@ -779,7 +742,6 @@ color: #ffffff;
   min-height: 100%;
   max-width: 45rem;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
 }
 
 .metro-2 {
@@ -795,8 +757,6 @@ color: #ffffff;
   grid-area: image3;
   min-height: 15rem;
   width: 30rem;
-
-
 }
 
 .metro-4 {
@@ -804,7 +764,6 @@ color: #ffffff;
   grid-area: image4;
   min-height: 15rem;
   width: 15rem;
-
 }
 
 .metro-5 {
@@ -813,7 +772,6 @@ color: #ffffff;
   min-height: 30rem;
   width: 15rem;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
 }
 
 .awards a {
@@ -826,7 +784,6 @@ color: #ffffff;
   font-weight: 400;
   padding: 10px 30px;
   transition: 0.5s;
-
 }
 
 .awards a:hover {
@@ -834,7 +791,6 @@ color: #ffffff;
   color: salmon;
   letter-spacing: 0.25rem;
   box-shadow: 0 0 0.5rem salmon;
-
 }
 
 .awards a::before {
@@ -842,7 +798,6 @@ color: #ffffff;
   position: absolute;
   inset: 0.2rem;
   background: #000000;
-
 }
 
 .awards a span {
@@ -889,8 +844,7 @@ color: #ffffff;
   width: 2rem;
   left: 80%;
 }
-
-
+/* ------START_OF_RESPONSIVE_ABOUT US---- */
 @media screen and (max-width:64em){
   
   .first-contact {
@@ -925,25 +879,19 @@ color: #ffffff;
     display: flex;
     align-items: center;
     justify-content:space-around;
-    
-  
   }
   
   .awards h2 {
     color: #fff;
     font-size: 5rem;
-  
   }
   
-
   .metro-style {
     display: none;
   }
 }
 
 @media screen and (max-width:27em){
-  
- 
 .upperBody_aboutUs {
   max-width: 100%;
   display: flex;
@@ -957,7 +905,7 @@ color: #ffffff;
   max-width: 100%;
   font-size: 1.5rem;
   color: #fff;
-margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .rotating-sphere {
@@ -984,7 +932,6 @@ display: none;
   font-weight: 900;
   text-wrap: balance;
   align-items: left;
-
 }
 
 .mission-text {
@@ -995,14 +942,11 @@ display: none;
   width: 100%;
 }
 
-
 .first-contact {
   background: url(firstcontact.jpg);
   background-size: cover;
   height: 100%;
   max-width: auto;
- 
- 
   background-position: center;
 }
 
@@ -1012,7 +956,6 @@ display: none;
   gap: 2rem;
   align-items: center;
   margin-right: 0;
-  
   }
 
   .tech1 {
@@ -1033,12 +976,13 @@ display: none;
   .awards h2 {
     color: #fff;
     font-size: 5rem;
-  padding-left: 16rem;
+    padding-left: 16rem;
   }
-  
+
   .awardImg {
     margin-left: 8rem;
   }
+
   .metro-style {
     display: none;
   }
@@ -1046,18 +990,11 @@ display: none;
   .awards a {
     margin-left: 13rem;
   }
-  
 }
-
+/* ------END_OF_RESPONSIVE_ABOUT US---- */
 /* ------END OF ABOUT US-------- */
 
-
-
-
 /* ------MAIN-CONTACT US----- */
-
-
-
 #contactUs-body {
   display: flex;
   background-image: url(/ContactUs/contactpic.jpg);
@@ -1066,7 +1003,6 @@ display: none;
   background-size: cover;
   max-width: 100%;
   min-height: 150rem;
-
 }
 
 .contactUs-aside {
@@ -1085,7 +1021,6 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .wrapper {
@@ -1106,7 +1041,6 @@ display: none;
 .wrapper .input-box {
   display: flex;
   justify-content: space-between;
-
 }
 
 .input-field {
@@ -1140,7 +1074,6 @@ input {
   font-size: 20px;
 }
 
-
 .wrapper .btn {
   width: 100%;
   min-height: 4.5rem;
@@ -1171,8 +1104,7 @@ input {
   width: auto;
   margin-right: 1rem;
 }
-
-
+/* ----START_OF_RESPONSIVE_CONTACT US---- */
 @media (max-width:64em) {
   #contactUs-body {
     flex-direction: column;
@@ -1240,16 +1172,11 @@ input {
   .wrapper {
     width: 45rem;
   }
-  
 }
-
-
+/* ----END_OF_RESPONSIVE_CONTACT US---- */
 /* -----END OF CONTACT_US ---- */
 
-
 /* -----START OF DESTINATION---- */
-
-
 .upperDestination {
   margin-top: 20rem;
   display: flex;
@@ -1266,11 +1193,9 @@ input {
 
 }
 
-
 .planets-container {
   display: flex;
   justify-content: space-around;
-
 }
 
 .planets {
@@ -1309,8 +1234,6 @@ input {
   font-size: 1.4rem;
   color: #fff;
 }
-
-
 
 .center-destination {
   margin-top: 20rem;
@@ -1356,8 +1279,6 @@ input {
   }
 }
 
-
-
 .quote1Destiantion {
   margin-bottom: 20rem;
   padding: 1.5rem;
@@ -1368,20 +1289,16 @@ input {
   align-items: center;
   width: 50%;
   gap: 2rem;
-
 }
 
 .quote1Destiantion h2 {
   font-size: 4rem;
 }
 
-
 .quote1Destiantion p {
   font-size: 2rem;
 }
-
-
-
+/* ----START_OF_RESPONSIVE_DESTINATION BODY---- */
 @media screen and (max-width: 64rem)
 {
  
@@ -1469,43 +1386,42 @@ input {
     display: flex;
     color: #fff;
   }
-  
-    .planets-container {
-      padding: 0 2rem 0 2rem;
-      display: grid;
-      width: 100%;
-      justify-content: space-around;
-      grid-template-areas: 
-      'planet1  planet2 '
-      'planet3  planet4 '
-      'planet5 .'
-      ;
-      gap: 2rem;
+  .planets-container {
+    padding: 0 2rem 0 2rem;
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    grid-template-areas: 
+    'planet1  planet2 '
+   'planet3  planet4 '
+    'planet5 .'
+     ;
+    gap: 2rem;
     }
     
-    .planets-container :nth-child(1){
-      grid-area: planet1;
-      width: 100%;
-      height: auto;
+  .planets-container :nth-child(1){
+    grid-area: planet1;
+    width: 100%;
+     height: auto;
     }
   
-    .planets-container :nth-child(2){
-      grid-area: planet2;
-      width: 100%;
-      height: auto;
-    }
+  .planets-container :nth-child(2){
+    grid-area: planet2;
+    width: 100%;
+    height: auto;
+   }
   
-    .planets-container :nth-child(3){
-      grid-area: planet3;
-      width: 100%;
-      height: auto;
-    }
+  .planets-container :nth-child(3){
+     grid-area: planet3;
+     width: 100%;
+     height: auto;
+  }
   
-    .planets-container :nth-child(4){
-      grid-area: planet4;
-      width: 100%;
-      height: auto;
-    }
+  .planets-container :nth-child(4){
+    grid-area: planet4;
+    width: 100%;
+     height: auto;
+   }
   
     .planets-container :nth-child(5){
       grid-area: planet5;
@@ -1542,16 +1458,10 @@ input {
       font-size: 1.2rem;
     }
 }
-
-
-
-
-
+/* ----END_OF_RESPONSIVE_DESTINATION BODY---- */
 /* ---END DESTINATION BODY---- */
 
-
 /* START BOOK A TRIP BODY */
-
 .content-trip {
   padding-top: 20rem;
   width: 100%;
@@ -1573,7 +1483,6 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .trip-quote p {
@@ -1594,7 +1503,6 @@ input {
   color: #000000;
   width: 100%;
 }
-
 
 .secondTrip {
   display: flex;
@@ -1706,7 +1614,7 @@ input {
 .wordsVisible {
   opacity: 1;
 }
-
+/* ----START_OF_RESPONSIVE_BOOK A TRIP---- */
 @media screen and (max-width:64rem){
 
   .firstTrip img{
@@ -1905,10 +1813,8 @@ input {
     display: none;
   }
 }
-
+/* ----END_OF_RESPONSIVE_BOOK A TRIP---- */
 /* --END OF BOOK A TRIP */
-
-
 
 /* ----START OF INTRO PAGE--- */
 
@@ -1938,7 +1844,7 @@ input {
   width: 100%;
   object-fit: cover;
 }
-
+/* PARALLAX_IMAGE_ADJUSTMENT */
 .background {
   transform: translateZ(-10px) scale(2);
 }
@@ -1951,7 +1857,7 @@ input {
 .volcano {
   transform: translateZ(5px) scale(0.5);
 }
-
+/* PARALLAX_ADJUSTMENT_END */
 .header h1 {
   z-index: 5;
   color: #fff;
@@ -2016,7 +1922,7 @@ input {
   align-items: center;
   padding: 30rem 0;
 }
-
+/* -------START_OF_RESPONSIVE_iNTRO_PAGE------*/
 @media screen and (max-width:64rem){
   .parallax-text {
     font-size: 2rem;
@@ -2125,8 +2031,8 @@ input {
     margin-top: 10rem  ;
   }
 }
-
-/* ----END_OF INTROPAGE---- */
+/* -----END_OF_RESPONSIVE_INTRO_PAGE */
+/* -----END_OF INTRO_PAGE---- */
 
 /* ----START_OF_EXPLORE_PLUS */
 
@@ -2176,7 +2082,7 @@ input {
 .photos {
   display: none;
 }
-
+/* --POSITIONING_BUTTONS_OF_CAROUSEL-- */
 .prev , .next {
   position: absolute;
   color: #fff;
@@ -2205,6 +2111,34 @@ input {
   text-shadow: 1px 1px 4px rgb(255, 255, 255);
 }
 
+/* THUMBNAILS */
+.thumbnail  {
+  background: transparent;
+   position: absolute;
+   bottom: 8%;
+   left:40%;
+  }
+  
+  .dots  {
+    border-radius: 50%;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    float: left;
+    transition: 0.7s ease;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.3;
+  }
+  
+  .active, .dots:hover {
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    opacity: 1;
+  }
+  
+/* ----START_OF_RESPONSIVE_EXPLORE_PLUS---- */
 @media screen and (max-width:64em){
   .explorePlus-quote{
     margin-top: 25rem;
@@ -2276,33 +2210,5 @@ input {
     font-size: 2rem;
   }
 }
-
-/* THUMBNAILS */
-
-.thumbnail  {
-background: transparent;
- position: absolute;
- bottom: 8%;
- left:40%;
-}
-
-.dots  {
-  border-radius: 50%;
-  list-style: none;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  margin: 20px;
-  float: left;
-  transition: 0.7s ease;
-  cursor: pointer;
-  display: inline-block;
-  opacity: 0.3;
-}
-
-.active, .dots:hover {
-  text-shadow: 1px 1px 4px rgb(255, 255, 255);
-  opacity: 1;
-}
-
-
+/* ----END_OF_RESPONSIVE_EXPLORE_PLUS---- */
+/* ----End_OF_EXPLORE_PLUS */
